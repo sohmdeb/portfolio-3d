@@ -183,8 +183,8 @@ export default class MonitorScreen extends EventEmitter {
         };
 
         // Set iframe attributes
-        // PROD
-        iframe.src = 'https://os.henryheffernan.com/';
+        // Default to deployed portfolio-os site
+        iframe.src = 'https://portfolio-os-beryl.vercel.app/';
         /**
          * Use dev server is query params are present
          *
@@ -204,7 +204,7 @@ export default class MonitorScreen extends EventEmitter {
         iframe.className = 'jitter';
         iframe.id = 'computer-screen';
         iframe.frameBorder = '0';
-        iframe.title = 'HeffernanOS';
+        iframe.title = 'SohamOS';
 
         // Add iframe to container
         container.appendChild(iframe);
